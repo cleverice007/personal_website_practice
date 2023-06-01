@@ -1,0 +1,196 @@
+/* Navbar styles */
+.navbar {
+    background-color: #f5f5f5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.name-container {
+    display: flex;
+    white-space: nowrap;
+}
+
+.name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.job {
+    color: #000;
+    font-weight: lighter;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+.nav-link.activity{
+    color: blue;
+    font-weight: lighter;
+}
+
+/* .navbar-toggler-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("/Users/yanyuming/Desktop/frontend_practice/Personal Website/hamber_icon.png"); /* Replace with your icon */
+/* background-repeat: no-repeat;
+    background-size: contain;
+}  */
+
+.nav-item {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+    .name {
+        white-space: normal;
+    }
+}
+
+@media (min-width: 768px) {
+    .name-container {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .navbar-toggler-container {
+        display: none;
+    }
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 30px;
+    left: auto;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Center */
+
+.container-fluid {
+    background-color: #E6DACE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300vh;
+  }
+.container-fluid h1{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+  
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 725px;
+    height: 365px;
+    background-color: #FFFFFF;
+    margin: 20px 0;
+
+  }
+  .left-content{
+    position: relative;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.left-content p:nth-child(1){
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 10%;    
+}
+
+.left-content p:nth-child(2){
+    font-size: medium;
+    font-weight: lighter;
+    margin-top: 10%;
+    
+}
+
+  .right-content{
+    position: relative;
+    width: 50%;
+    display: flex;
+  }
+
+
+  .card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  
+  @media  (max-width: 768px) {
+    .container-fluid {
+      align-items: stretch;
+      justify-content: center;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+.contact .social-icons{
+    margin-right: 2rem;    
+}
+.contact .social-icons i{
+    margin-right: 2rem;    
+}
